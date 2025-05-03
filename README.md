@@ -4,7 +4,7 @@ Made using c++
 ---
 
 The game utilizies C++, stdlib, time, and iostream libraries.
-## AbouT The Game
+## About The Game
 The game creates a 5x5 grid in the terminal that displays a users position. The user can navigate the board by using WASD.
 The goal of the game is to gather 3 treasures without losing your health.
 The user will initially have 100 health and will lose it over time if they run into a trap or an opponent that moves to a random location after every turn.
