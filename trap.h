@@ -4,10 +4,12 @@
 #include "gridElement.h"
 using namespace std;
 
-class Treasure : public GridElement{
+class Trap : public GridElement{
     public:
         void process(Player& p) override;
         void display() const override;
+
+        friend ostream& operator<<(ostream&, const Trap&);
 };
 
 #endif

@@ -11,7 +11,7 @@ class Game{
     Player* player;
     Opponent* opponent;
     const int size = 5;
-    bool **visitedTraps; //vistedTraps[y][x]
+    bool **visitedTraps; //vistedTraps[y][x] or is it [x][y]
 
     public:
     Game();

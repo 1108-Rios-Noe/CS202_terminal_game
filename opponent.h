@@ -1,20 +1,22 @@
 #ifndef OPPONENT_H
 #define OPPONENT_H
 
-#include <iostream>
-using namespace std;
-
+#include "gridElement.h"
 
 class Opponent : public GridElement{
     int x, y;
-    int damage;
 
     public:
-        Player();
-        Player(int health, int treasureCount, int x, int y);
-        Player(const Player& other);
-        ~Player();
+        Opponent();
+        Opponent(int x, int y);
+        Opponent(const Player& other);
 
+        void process(Player&) override; //does 30 damage
+        void display() const override;
+
+        void moveRandom(); //uses time.h
+
+        friend ostream& operator<<(ostream& os, const Opponent& opp);
         
 };
 
