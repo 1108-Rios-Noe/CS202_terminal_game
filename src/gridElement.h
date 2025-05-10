@@ -13,8 +13,8 @@ class GridElement{
         virtual void display() const = 0;
         virtual ~GridElement(){};
 
-        friend ostream& operator<<(ostream& os, const GridElement& element){
-            os << element.display();
+        friend ostream& operator<<(ostream& os, const GridElement& g){
+            g.display();
             return os;
         }
 };

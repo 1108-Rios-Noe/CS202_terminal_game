@@ -1,9 +1,9 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
+#include "game.h"
 #include <iostream>
 using namespace std;
-
 
 class Player{
     int health;

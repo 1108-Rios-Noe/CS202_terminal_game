@@ -2,6 +2,7 @@
 #define OPPONENT_H
 
 #include "gridElement.h"
+#include "game.h"
 
 class Opponent : public GridElement{
     int x, y;
@@ -9,12 +10,12 @@ class Opponent : public GridElement{
     public:
         Opponent();
         Opponent(int x, int y);
-        Opponent(const Player& other);
+        Opponent(const Opponent& other);
 
         void process(Player&) override; //does 30 damage
         void display() const override;
 
-        void moveRandom(); //uses time.h
+        void moveRandom(Game&); //uses time.h
 
         friend ostream& operator<<(ostream& os, const Opponent& opp);
         
